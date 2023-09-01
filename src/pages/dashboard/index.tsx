@@ -129,7 +129,7 @@ const Dashboard = ({user}: UserdashboardProps) => {
                                 <div className={styles.taskContent}>
                                     {
                                         task.public ? (
-                                            <Link href={`/tasks/${task.id}`} ><p>{task.task}</p></Link>
+                                            <Link href={`/task/${task.id}`} ><p>{task.task}</p></Link>
                                         ) : <p>{task.task}</p>
                                     }
                                     <button className={styles.trashButton} onClick={() => handleDeleteTask(task.id)}><FaTrash size={24} color='#ea3140'/></button>
